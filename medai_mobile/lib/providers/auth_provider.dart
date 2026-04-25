@@ -103,10 +103,15 @@ class AuthProvider extends ChangeNotifier {
         email: email,
         createdAt: DateTime.now(),
       );
-      await _firestoreService.createUser(user);
+      // Keep local model even if Firestore write fails — auth state will navigate
       _userModel = user;
+      try {
+        await _firestoreService.createUser(user);
+      } catch (_) {}
     } on FirebaseAuthException catch (e) {
       _error = _mapFirebaseError(e.code);
+    } catch (e) {
+      _error = 'Registration failed. Please try again.';
     } finally {
       _isLoading = false;
       notifyListeners();
@@ -161,7 +166,8 @@ class AuthProvider extends ChangeNotifier {
       case 'user-not-found':
         return 'No account found with this email.';
       case 'wrong-password':
-        return 'Incorrect password.';
+      case 'invalid-credential':
+        return 'Incorrect password. Please try again.';
       case 'email-already-in-use':
         return 'This email is already registered.';
       case 'weak-password':

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../theme/app_theme.dart';
 import '../../providers/auth_provider.dart';
-import '../auth/sign_in_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -44,10 +43,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   void _goToSignIn() {
     context.read<AuthProvider>().completeOnboarding();
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (_) => const SignInScreen()),
-    );
+    // RootScreen will automatically navigate to SignInScreen
   }
 
   @override

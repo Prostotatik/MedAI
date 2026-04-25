@@ -3,6 +3,8 @@ z.ai_documentation
 FIREBASE_SETUP.md
 CLAUDE.md
 design
+website/node_modules
+website/dist
 .claude
 PitchDeck.html
 PRD.html

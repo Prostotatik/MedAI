@@ -1,0 +1,17 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "medai-43824",
+          "configurations": {
+            "android": "1:832790992357:android:0d7596c2ad6354c7ec0b0c"
+          }
+        }
+      }
+    }
+  }
+}

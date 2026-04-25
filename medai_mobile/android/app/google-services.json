@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832790992357",
+    "project_id": "medai-43824",
+    "storage_bucket": "medai-43824.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832790992357:android:0d7596c2ad6354c7ec0b0c",
+        "android_client_info": {
+          "package_name": "com.example.medai_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiMs2Qq4EO_ALhTfbRXMmgAk2e_jcpqZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

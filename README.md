@@ -2,6 +2,10 @@
 
 A healthcare platform that combines AI-powered symptom assessment with appointment booking, connecting patients to hospitals through a unified mobile and web experience.
 
+# Pitching Video
+
+https://drive.google.com/file/d/1xxHxC23YlhEBAefE9tM5Tz9bgZwpsrjZ/view?usp=drive_link
+
 ## Overview
 
 MedAI consists of two components:

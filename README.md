@@ -111,14 +111,14 @@ MedAI/
 │   │   ├── theme/         # App theming
 │   │   └── widgets/       # Reusable widgets
 │   └── test/
-├── website/               # React web portal
-│   ├── src/
-│   │   ├── main.jsx       # Entry point
-│   │   ├── App.jsx        # Router setup
-│   │   ├── pages/         # Page components
-│   │   └── components/    # UI components
-│   └── public/
-└── CLAUDE.md              # Development guidelines
+└── website/               # React web portal
+    ├── src/
+    │   ├── main.jsx       # Entry point
+    │   ├── App.jsx        # Router setup
+    │   ├── pages/         # Page components
+    │   └── components/    # UI components
+    └── public/
+
 ```
 
 ## Architecture
